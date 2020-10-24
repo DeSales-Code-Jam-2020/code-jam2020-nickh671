@@ -2,9 +2,13 @@ def main(str1, str2):
     same = True
     first = str1[0]
     for char in str1:
-        if str1[1] != first:
+        if char != first:
             same = False
     
+    for char in str2:
+        if char != first:
+            same = False
+
     if same == False:
         reverse = str1[::-1]
         count = str1.count(str2)
